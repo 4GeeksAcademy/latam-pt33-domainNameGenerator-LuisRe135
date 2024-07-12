@@ -1,11 +1,17 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+let pronoun = ["the", "our", "his", "her", "their"];
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+let adj = ["great", "big", "dark", "light", "fat"];
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+let noun = ["jogger", "racoon", "fart", "tacos"];
+
+let ext = [".com", ".net", ".ve"];
+
+pronoun.forEach((articulo) => {
+  adj.forEach((adjetivo) => {
+    noun.forEach((sustantivo) => {
+      ext.forEach((extension) => {
+        console.log(articulo + adjetivo + sustantivo + extension);
+      });
+    });
+  });
+});
